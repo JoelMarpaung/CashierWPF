@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CRUDBootcamp32.Context
 {
-    class MyContext : DbContext
+    public class MyContext : DbContext
     {
         public MyContext() : base("MyContext") { }
         public DbSet<Supplier> Suppliers { get; set; }
